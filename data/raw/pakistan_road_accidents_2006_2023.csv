@@ -1,0 +1,80 @@
+Year,Province,Total_Accidents,Fatal_Accidents,Non_Fatal_Accidents,Killed,Injured,Total_Vehicles_Involved,Source,Coverage,Fatality_Rate,Injury_Rate,Fatal_Accident_Ratio,Vehicles_Per_Accident,Killed_Per_Fatal_Acc,Injured_Per_Accident,Year_Type,Year_Numeric,Severity_Index,Province_Code
+2010-11,Balochistan,311,158,153,191,350,382,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),61.41,112.54,50.8,1.23,1.21,1.13,Fiscal,2010,2.354,4
+2011-12,Balochistan,324,139,185,161,480,374,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),49.69,148.15,42.9,1.15,1.16,1.48,Fiscal,2011,2.475,4
+2012-13,Balochistan,297,136,161,163,362,381,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),54.88,121.89,45.79,1.28,1.2,1.22,Fiscal,2012,2.316,4
+2013-14,Balochistan,342,173,169,247,480,434,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),72.22,140.35,50.58,1.27,1.43,1.4,Fiscal,2013,2.848,4
+2014-15,Balochistan,315,147,168,178,440,389,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),56.51,139.68,46.67,1.23,1.21,1.4,Fiscal,2014,2.527,4
+2015-16,Balochistan,357,178,179,207,504,470,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),57.98,141.18,49.86,1.32,1.16,1.41,Fiscal,2015,2.571,4
+2016-17,Balochistan,401,209,192,321,567,537,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),80.05,141.4,52.12,1.34,1.54,1.41,Fiscal,2016,3.015,4
+2017-18,Balochistan,496,259,237,313,624,715,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),63.1,125.81,52.22,1.44,1.21,1.26,Fiscal,2017,2.52,4
+2018-19,Balochistan,409,226,183,330,542,642,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),80.68,132.52,55.26,1.57,1.46,1.33,Fiscal,2018,2.939,4
+2019-20,Balochistan,469,252,217,289,640,694,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),61.62,136.46,53.73,1.48,1.15,1.36,Fiscal,2019,2.597,4
+2020-21,Balochistan,495,258,237,315,575,724,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),63.64,116.16,52.12,1.46,1.22,1.16,Fiscal,2020,2.434,4
+2021-22,Balochistan,434,215,219,268,535,658,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),61.75,123.27,49.54,1.52,1.25,1.23,Fiscal,2021,2.468,4
+2022-23,Balochistan,355,190,165,244,414,531,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),68.73,116.62,53.52,1.5,1.28,1.17,Fiscal,2022,2.541,4
+2012-13,Islamabad,201,107,94,109,180,212,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),54.23,89.55,53.23,1.05,1.02,0.9,Fiscal,2012,1.98,5
+2013-14,Islamabad,256,120,136,132,206,256,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),51.56,80.47,46.88,1.0,1.1,0.8,Fiscal,2013,1.836,5
+2014-15,Islamabad,216,107,109,118,182,217,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),54.63,84.26,49.54,1.0,1.1,0.84,Fiscal,2014,1.935,5
+2015-16,Islamabad,244,120,124,140,209,244,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),57.38,85.66,49.18,1.0,1.17,0.86,Fiscal,2015,2.004,5
+2016-17,Islamabad,226,127,99,129,124,216,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),57.08,54.87,56.19,0.96,1.02,0.55,Fiscal,2016,1.69,5
+2017-18,Islamabad,259,157,102,167,162,259,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),64.48,62.55,60.62,1.0,1.06,0.63,Fiscal,2017,1.915,5
+2018-19,Islamabad,238,127,111,136,134,239,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),57.14,56.3,53.36,1.0,1.07,0.56,Fiscal,2018,1.706,5
+2019-20,Islamabad,189,111,78,118,121,189,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),62.43,64.02,58.73,1.0,1.06,0.64,Fiscal,2019,1.889,5
+2020-21,Islamabad,201,128,73,141,123,211,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),70.15,61.19,63.68,1.05,1.1,0.61,Fiscal,2020,2.015,5
+2021-22,Islamabad,224,105,119,122,151,239,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),54.46,67.41,46.88,1.07,1.16,0.67,Fiscal,2021,1.763,5
+2022-23,Islamabad,224,112,114,115,119,232,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),51.34,53.12,50.0,1.04,1.03,0.53,Fiscal,2022,1.558,5
+2010-11,Khyber Pakhtunkhwa,2722,773,1949,986,4153,3479,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),36.22,152.57,28.4,1.28,1.28,1.53,Fiscal,2010,2.25,3
+2011-12,Khyber Pakhtunkhwa,2772,785,1987,953,3913,3501,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),34.38,141.16,28.32,1.26,1.21,1.41,Fiscal,2011,2.099,3
+2012-13,Khyber Pakhtunkhwa,2968,846,2122,1059,4016,3736,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),35.68,135.31,28.5,1.26,1.25,1.35,Fiscal,2012,2.067,3
+2013-14,Khyber Pakhtunkhwa,3120,877,2243,1033,4257,3934,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),33.11,136.44,28.11,1.26,1.18,1.36,Fiscal,2013,2.027,3
+2014-15,Khyber Pakhtunkhwa,3399,942,2457,1137,4524,4260,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),33.45,133.1,27.71,1.25,1.21,1.33,Fiscal,2014,2.0,3
+2015-16,Khyber Pakhtunkhwa,4287,1083,3204,1299,5527,5490,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),30.3,128.92,25.26,1.28,1.2,1.29,Fiscal,2015,1.895,3
+2016-17,Khyber Pakhtunkhwa,4256,1103,3153,1317,5804,5736,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),30.94,136.37,25.92,1.35,1.19,1.36,Fiscal,2016,1.983,3
+2017-18,Khyber Pakhtunkhwa,4425,1119,3306,1295,6093,6052,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),29.27,137.69,25.29,1.37,1.16,1.38,Fiscal,2017,1.962,3
+2018-19,Khyber Pakhtunkhwa,4337,1097,3240,1318,5798,6062,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),30.39,133.69,25.29,1.4,1.2,1.34,Fiscal,2018,1.945,3
+2019-20,Khyber Pakhtunkhwa,3891,997,2894,1186,5069,5487,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),30.48,130.27,25.62,1.41,1.19,1.3,Fiscal,2019,1.912,3
+2020-21,Khyber Pakhtunkhwa,4277,1088,3189,1291,5598,6068,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),30.18,130.89,25.44,1.42,1.19,1.31,Fiscal,2020,1.913,3
+2021-22,Khyber Pakhtunkhwa,3908,929,2979,1097,5097,5611,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),28.07,130.42,23.77,1.44,1.18,1.3,Fiscal,2021,1.866,3
+2022-23,Khyber Pakhtunkhwa,3315,833,2482,1019,4334,4633,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),30.74,130.74,25.13,1.4,1.22,1.31,Fiscal,2022,1.922,3
+2006-07,Pakistan (National),10466,4535,5931,5465,12875,11481,NTRC - National Transport Research Centre,National (Pakistan),52.22,123.02,43.33,1.1,1.21,1.23,Fiscal,2006,2.275,0
+2007-08,Pakistan (National),10466,4610,5856,5615,12096,11456,NTRC - National Transport Research Centre,National (Pakistan),53.65,115.57,44.05,1.09,1.22,1.16,Fiscal,2007,2.229,0
+2008-09,Pakistan (National),9496,4145,5351,4907,11037,10322,NTRC - National Transport Research Centre,National (Pakistan),51.67,116.23,43.65,1.09,1.18,1.16,Fiscal,2008,2.196,0
+2009-10,Pakistan (National),9747,4378,5369,5280,11173,10496,NTRC - National Transport Research Centre,National (Pakistan),54.17,114.63,44.92,1.08,1.21,1.15,Fiscal,2009,2.23,0
+2010-11,Pakistan (National),9723,4280,5443,5271,11383,10822,NTRC - National Transport Research Centre,National (Pakistan),54.21,117.07,44.02,1.11,1.23,1.17,Fiscal,2010,2.255,0
+2011-12,Pakistan (National),9140,3966,5174,4758,10145,9986,NTRC - National Transport Research Centre,National (Pakistan),52.06,111.0,43.39,1.09,1.2,1.11,Fiscal,2011,2.151,0
+2012-13,Pakistan (National),8988,3884,5104,4719,9710,9876,NTRC - National Transport Research Centre,National (Pakistan),52.5,108.03,43.21,1.1,1.21,1.08,Fiscal,2012,2.13,0
+2013-14,Pakistan (National),8359,3500,4859,4348,9777,9423,NTRC - National Transport Research Centre,National (Pakistan),52.02,116.96,41.87,1.13,1.24,1.17,Fiscal,2013,2.21,0
+2014-15,Pakistan (National),7865,3214,4651,3954,9661,8949,NTRC - National Transport Research Centre,National (Pakistan),50.27,122.84,40.86,1.14,1.23,1.23,Fiscal,2014,2.234,0
+2015-16,Pakistan (National),9100,3591,5509,4448,11544,10636,NTRC - National Transport Research Centre,National (Pakistan),48.88,126.86,39.46,1.17,1.24,1.27,Fiscal,2015,2.246,0
+2016-17,Pakistan (National),9582,4036,5546,5047,12696,11317,NTRC - National Transport Research Centre,National (Pakistan),52.67,132.5,42.12,1.18,1.25,1.32,Fiscal,2016,2.378,0
+2017-18,Pakistan (National),11121,4829,6292,5948,14489,13134,NTRC - National Transport Research Centre,National (Pakistan),53.48,130.29,43.42,1.18,1.23,1.3,Fiscal,2017,2.373,0
+2018-19,Pakistan (National),10779,4878,5901,5932,13219,12908,NTRC - National Transport Research Centre,National (Pakistan),55.03,122.64,45.25,1.2,1.22,1.23,Fiscal,2018,2.327,0
+2019-20,Pakistan (National),9701,4397,5298,5436,12317,12894,NTRC - National Transport Research Centre,National (Pakistan),56.04,126.97,45.33,1.33,1.24,1.27,Fiscal,2019,2.39,0
+2022,Pakistan (National),9176,4096,5082,5020,11187,13942,NTRC - National Transport Research Centre,National (Pakistan),54.71,121.92,44.64,1.52,1.23,1.22,Calendar,2022,2.313,0
+2023,Pakistan (National),9391,4898,4493,5902,11164,14415,NTRC - National Transport Research Centre,National (Pakistan),62.85,118.88,52.16,1.53,1.2,1.19,Calendar,2023,2.446,0
+2010-11,Punjab,5420,2591,2829,3167,5809,5420,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),58.43,107.18,47.8,1.0,1.22,1.07,Fiscal,2010,2.24,1
+2011-12,Punjab,4990,2361,2629,2888,5071,4990,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),57.88,101.62,47.31,1.0,1.22,1.02,Fiscal,2011,2.174,1
+2012-13,Punjab,4587,2213,2374,2692,4515,4587,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),58.69,98.43,48.25,1.0,1.22,0.98,Fiscal,2012,2.158,1
+2013-14,Punjab,3696,1717,1979,2145,3941,3696,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),58.04,106.63,46.46,1.0,1.25,1.07,Fiscal,2013,2.227,1
+2014-15,Punjab,3054,1435,1619,1750,3652,3054,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),57.3,119.58,46.99,1.0,1.22,1.2,Fiscal,2014,2.342,1
+2015-16,Punjab,3288,1576,1712,2053,4550,3288,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),62.44,138.38,47.93,1.0,1.3,1.38,Fiscal,2015,2.633,1
+2016-17,Punjab,3819,1989,1830,2494,5231,3819,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),65.31,136.97,52.08,1.0,1.25,1.37,Fiscal,2016,2.676,1
+2017-18,Punjab,5093,2708,2385,3371,6772,5093,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),66.19,132.97,53.17,1.0,1.24,1.33,Fiscal,2017,2.653,1
+2018-19,Punjab,4823,2808,2015,3423,5916,4823,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),70.97,122.66,58.22,1.0,1.22,1.23,Fiscal,2018,2.646,1
+2019-20,Punjab,4294,2471,1823,3102,5746,5498,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),72.24,133.81,57.55,1.28,1.26,1.34,Fiscal,2019,2.783,1
+2020-21,Punjab,4531,2643,1888,3307,5776,7287,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),72.99,127.48,58.33,1.61,1.25,1.27,Fiscal,2020,2.734,1
+2021-22,Punjab,4671,2594,2077,3258,6224,7747,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),69.75,133.25,55.53,1.66,1.26,1.33,Fiscal,2021,2.727,1
+2022-23,Punjab,4398,2717,1681,3311,5540,5978,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),75.28,125.97,61.78,1.36,1.22,1.26,Fiscal,2022,2.765,1
+2010-11,Sindh,1270,758,512,927,1071,1541,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),72.99,84.33,59.69,1.21,1.22,0.84,Fiscal,2010,2.303,2
+2011-12,Sindh,1054,681,373,756,681,1121,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),71.73,64.61,64.61,1.06,1.11,0.65,Fiscal,2011,2.081,2
+2012-13,Sindh,935,582,353,696,637,960,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),74.44,68.13,62.25,1.03,1.2,0.68,Fiscal,2012,2.17,2
+2013-14,Sindh,945,613,332,791,893,1103,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),83.7,94.5,64.87,1.17,1.29,0.94,Fiscal,2013,2.619,2
+2014-15,Sindh,881,583,298,771,863,1029,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),87.51,97.96,66.17,1.17,1.32,0.98,Fiscal,2014,2.73,2
+2015-16,Sindh,924,634,290,749,754,1144,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),81.06,81.6,68.61,1.24,1.18,0.82,Fiscal,2015,2.437,2
+2016-17,Sindh,880,608,272,786,970,1009,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),89.32,110.23,69.09,1.15,1.29,1.1,Fiscal,2016,2.889,2
+2017-18,Sindh,848,586,262,802,838,1015,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),94.58,98.82,69.1,1.2,1.37,0.99,Fiscal,2017,2.88,2
+2018-19,Sindh,972,620,352,725,829,1142,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),74.59,85.29,63.79,1.17,1.17,0.85,Fiscal,2018,2.345,2
+2019-20,Sindh,858,572,286,741,741,1026,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),86.36,86.36,66.67,1.2,1.3,0.86,Fiscal,2019,2.591,2
+2020-21,Sindh,925,604,321,762,814,1061,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),82.38,88.0,65.3,1.15,1.26,0.88,Fiscal,2020,2.528,2
+2021-22,Sindh,753,488,265,584,550,876,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),77.56,73.04,64.81,1.16,1.2,0.73,Fiscal,2021,2.282,2
+2022-23,Sindh,716,474,242,597,530,838,PBS - Pakistan Bureau of Statistics,National + Province (Pakistan),83.38,74.02,66.2,1.17,1.26,0.74,Fiscal,2022,2.408,2
