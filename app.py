@@ -14,8 +14,19 @@ apply_sidebar()
 
 st.title("🛡️ RoadGuard Pakistan")
 st.markdown("### Road Traffic Accident Analysis Dashboard")
-st.markdown("""
-Welcome to **RoadGuard Pakistan** — use the sidebar to navigate between sections.
-""")
+st.markdown(
+     """
+    Welcome to **RoadGuard Pakistan** — a data-driven platform for exploring,
+    analysing, and predicting road traffic accidents across Pakistan.
+
+    Use the sidebar to navigate between sections:
+    - 📊 **Overview** — KPIs and summary statistics
+    - 🗺️ **Accident Map** — Interactive hotspot heatmap
+    - 📈 **EDA & Trends** — 15+ exploratory charts
+    - 🏙️ **Province Comparison** — Regional breakdown
+    - 🤖 **ML Predictions** — Severity & fatality predictor
+    - 📋 **Policy Insights** — Data-backed recommendations
+    """
+)
 st.divider()
 st.caption("BS Data Science Project · April 2026 · Pakistan")
