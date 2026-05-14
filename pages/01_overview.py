@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
+import sys
+sys.path.append('.')
+from utils.styles import apply_sidebar
 # Brand colours
 NAVY = '#0C447C'
 BLUE = '#185FA5'
@@ -10,6 +12,7 @@ OFF_WHITE = '#F1EFE8'
 
 st.set_page_config(page_title="Overview | RoadGuard Pakistan", 
                    page_icon="📊", layout="wide")
+apply_sidebar()
 
 st.title("📊 Overview")
 st.markdown("#### Key Performance Indicators — Pakistan Road Safety")

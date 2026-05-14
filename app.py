@@ -6,13 +6,16 @@ BS Data Science Project | 2026
 """
 
 import streamlit as st
-
+import sys
+sys.path.append('.')
+from utils.styles import apply_sidebar
 st.set_page_config(
     page_title="RoadGuard Pakistan",
     page_icon="🛡️",
     layout="wide",
     initial_sidebar_state="expanded",
 )
+apply_sidebar()
 
 st.sidebar.markdown("## 🛡️ RoadGuard Pakistan")
 st.sidebar.markdown("*Data-driven road safety intelligence for Pakistan*")

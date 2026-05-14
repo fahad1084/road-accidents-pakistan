@@ -2,7 +2,9 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-
+import sys
+sys.path.append('.')
+from utils.styles import apply_sidebar
 # Brand colours
 NAVY = '#0C447C'
 BLUE = '#185FA5'
@@ -13,6 +15,7 @@ OFF_WHITE = '#F1EFE8'
 
 st.set_page_config(page_title="Provinces | RoadGuard Pakistan",
                    page_icon="🏙️", layout="wide")
+apply_sidebar()
 
 st.title("🏙️ Province Comparison")
 st.markdown("#### Side-by-side road safety analysis across Pakistan's provinces")

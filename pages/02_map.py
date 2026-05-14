@@ -3,7 +3,9 @@ import pandas as pd
 from streamlit_folium import st_folium
 import folium
 from folium.plugins import HeatMap
-
+import sys
+sys.path.append('.')
+from utils.styles import apply_sidebar
 # Brand colours
 NAVY = '#0C447C'
 BLUE = '#185FA5'
@@ -13,6 +15,7 @@ DEEP_RED = '#A32D2D'
 
 st.set_page_config(page_title="Map | RoadGuard Pakistan",
                    page_icon="🗺️", layout="wide")
+apply_sidebar()
 
 st.title("🗺️ Accident Hotspot Maps")
 st.markdown("#### Interactive geospatial analysis of road accidents across Pakistan")
