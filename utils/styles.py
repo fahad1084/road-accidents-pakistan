@@ -85,18 +85,28 @@ def apply_sidebar():
     """, unsafe_allow_html=True)
 
     # ── Navigation links ──
+    # ── Navigation links ──
     nav_pages = [
-        ("📊", "Overview",            "01_Overview"),
-        ("🗺️", "Accident Map",        "02_Map"),
-        ("📈", "EDA & Trends",        "03_Eda"),
-        ("🏙️", "Province Comparison", "04_Provinces"),
-        ("🤖", "ML Predictions",      "05_Predict"),
-        ("📋", "Policy Insights",     "06_Policy"),
-        ("👤", "About",               "07_About"),
+        ("📊", "Overview",            "overview"),
+        ("🗺️", "Accident Map",        "map"),
+        ("📈", "EDA & Trends",        "eda"),
+        ("🏙️", "Province Comparison", "provinces"),
+        ("🤖", "ML Predictions",      "predict"),
+        ("📋", "Policy Insights",     "policy"),
+        ("👤", "About",               "about"),
     ]
 
     for icon, label, page in nav_pages:
-        st.sidebar.page_link(f"pages/{page}.py", label=f"{icon}  {label}")
+        st.sidebar.markdown(f"""
+        <a href='/{page}' target='_self' style='text-decoration:none;'>
+        <div style='padding:7px 12px; border-radius:7px; margin-bottom:3px;
+                    display:block;'>
+            <span style='color:white !important; font-size:15px;'>
+                {icon}&nbsp;&nbsp;{label}
+            </span>
+        </div>
+        </a>
+        """, unsafe_allow_html=True)
 
     st.sidebar.divider()
 
