@@ -9,7 +9,11 @@ def apply_sidebar():
     /* ── Sidebar background ── */
     [data-testid="stSidebar"] {
         background: linear-gradient(160deg, #0C447C 0%, #185FA5 100%) !important;
-        padding-top: 0 !important;
+    }
+
+    /* ── Hide default page nav links ── */
+    [data-testid="stSidebarNav"] {
+        display: none !important;
     }
 
     /* ── All sidebar text white ── */
@@ -52,19 +56,10 @@ def apply_sidebar():
     /* ── Page titles ── */
     h1 { color: #0C447C !important; }
     h2, h3 { color: #185FA5 !important; }
-
-    /* ── Selectbox in sidebar ── */
-    [data-testid="stSidebar"] .stSelectbox label,
-    [data-testid="stSidebar"] .stMultiSelect label,
-    [data-testid="stSidebar"] .stSlider label,
-    [data-testid="stSidebar"] .stRadio label {
-        color: #E6F1FB !important;
-        font-weight: 500 !important;
-    }
     </style>
     """, unsafe_allow_html=True)
 
-    # ── Sidebar logo & branding ──
+    # ── Sidebar logo & branding ── (now shows ABOVE nav)
     st.sidebar.markdown("""
     <div style='text-align:center; padding:24px 10px 16px 10px;'>
         <div style='font-size:52px; line-height:1;'>🛡️</div>
@@ -89,24 +84,19 @@ def apply_sidebar():
     </div>
     """, unsafe_allow_html=True)
 
-    # ── Navigation pages ──
+    # ── Navigation links ──
     nav_pages = [
-        ("📊", "Overview",           "01_overview"),
-        ("🗺️", "Accident Map",       "02_map"),
-        ("📈", "EDA & Trends",       "03_eda"),
-        ("🏙️", "Province Comparison","04_provinces"),
-        ("🤖", "ML Predictions",     "05_predict"),
-        ("📋", "Policy Insights",    "06_policy"),
-        ("👤", "About",              "07_about"),
+        ("📊", "Overview",            "01_Overview"),
+        ("🗺️", "Accident Map",        "02_Map"),
+        ("📈", "EDA & Trends",        "03_Eda"),
+        ("🏙️", "Province Comparison", "04_Provinces"),
+        ("🤖", "ML Predictions",      "05_Predict"),
+        ("📋", "Policy Insights",     "06_Policy"),
+        ("👤", "About",               "07_About"),
     ]
 
-    for icon, label, _ in nav_pages:
-        st.sidebar.markdown(f"""
-        <div style='padding:7px 12px; border-radius:7px; margin-bottom:3px;
-                    transition: background 0.2s;'>
-            <span style='font-size:15px;'>{icon}&nbsp;&nbsp;{label}</span>
-        </div>
-        """, unsafe_allow_html=True)
+    for icon, label, page in nav_pages:
+        st.sidebar.page_link(f"pages/{page}.py", label=f"{icon}  {label}")
 
     st.sidebar.divider()
 
