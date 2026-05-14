@@ -31,15 +31,67 @@ df_main, df_punjab = load_data()
 df_provinces = df_main[df_main['Province'] != 'Pakistan (National)'].copy()
 df_national_only = df_main[df_main['Province'] == 'Pakistan (National)'].copy()
 
+# ── Download Data Popover ──
+with st.popover("⬇️ Download Data"):
+    st.markdown("**Choose dataset to download:**")
+    
+    csv_main = df_main.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        label="📥 Main Dataset (All Provinces 2006-2023)",
+        data=csv_main,
+        file_name="pakistan_accidents_main.csv",
+        mime="text/csv",
+        use_container_width=True
+    )
+    
+    csv_provinces = df_provinces.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        label="📥 Province Level Data",
+        data=csv_provinces,
+        file_name="pakistan_accidents_provinces.csv",
+        mime="text/csv",
+        use_container_width=True
+    )
+    
+    csv_punjab = df_punjab.to_csv(index=False).encode('utf-8')
+    st.download_button(
+        label="📥 Punjab District Data",
+        data=csv_punjab,
+        file_name="pakistan_accidents_punjab.csv",
+        mime="text/csv",
+        use_container_width=True
+    )
+
 # Sidebar filters
 st.sidebar.header("Filters")
+
+# Year range filter
+min_year = int(df_main['Year_Numeric'].min())
+max_year = int(df_main['Year_Numeric'].max())
+year_range = st.sidebar.slider(
+    "📅 Year Range",
+    min_value=min_year,
+    max_value=max_year,
+    value=(min_year, max_year)
+)
+
 selected_province = st.sidebar.multiselect(
     "Select Provinces",
     options=df_provinces['Province'].unique().tolist(),
     default=df_provinces['Province'].unique().tolist()
 )
 
-df_filtered = df_provinces[df_provinces['Province'].isin(selected_province)]
+# Apply both filters
+df_filtered = df_provinces[
+    (df_provinces['Province'].isin(selected_province)) &
+    (df_provinces['Year_Numeric'] >= year_range[0]) &
+    (df_provinces['Year_Numeric'] <= year_range[1])
+]
+
+df_national_only = df_national_only[
+    (df_national_only['Year_Numeric'] >= year_range[0]) &
+    (df_national_only['Year_Numeric'] <= year_range[1])
+]
 
 # Chart 1 & 2
 col1, col2 = st.columns(2)
