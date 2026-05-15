@@ -85,16 +85,17 @@ def apply_sidebar():
     """, unsafe_allow_html=True)
 
     # ── Navigation links ──
-    # ── Navigation links ──
     nav_pages = [
-        ("📊", "Overview",            "overview"),
-        ("🗺️", "Accident Map",        "map"),
-        ("📈", "EDA & Trends",        "eda"),
-        ("🏙️", "Province Comparison", "provinces"),
-        ("🤖", "ML Predictions",      "predict"),
-        ("📋", "Policy Insights",     "policy"),
-        ("👤", "About",               "about"),
-    ]
+    ("📊", "Overview",                "overview"),
+    ("🗺️", "Accident Map",            "map"),
+    ("📈", "EDA & Trends",            "eda"),
+    ("🏙️", "Province Comparison",     "provinces"),
+    ("🤖", "ML Predictions",          "predict"),
+    ("📋", "Policy Insights",         "policy"),
+    ("🌍", "International Benchmark", "benchmarking"),
+    ("👤", "About",                   "about"),
+]
+    
 
     for icon, label, page in nav_pages:
         st.sidebar.markdown(f"""
