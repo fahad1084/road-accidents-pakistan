@@ -86,16 +86,18 @@ def apply_sidebar():
 
     # ── Navigation links ──
     nav_pages = [
-    ("📊", "Overview",                "overview"),
-    ("🗺️", "Accident Map",            "map"),
-    ("📈", "EDA & Trends",            "eda"),
-    ("🏙️", "Province Comparison",     "provinces"),
-    ("🤖", "ML Predictions",          "predict"),
-    ("📋", "Policy Insights",         "policy"),
-    ("🌍", "International Benchmark", "benchmarking"),
-    ("👤", "About",                   "about"),
-]
-    
+        ("📊", "Overview",                "overview"),
+        ("🗺️", "Accident Map",            "map"),
+        ("📈", "EDA & Trends",            "eda"),
+        ("🏙️", "Province Comparison",     "provinces"),
+        ("🤖", "ML Predictions",          "predict"),
+        ("📋", "Policy Insights",         "policy"),
+        ("🌍", "International Benchmark", "benchmarking"),
+        ("🧮", "Risk Calculator",         "calculator"),
+        ("📋", "Province Scorecard",      "scorecard"),
+        ("⚠️", "Dangerous Roads",         "dangerous_roads"),
+        ("👤", "About",                   "about"),
+    ]
 
     for icon, label, page in nav_pages:
         st.sidebar.markdown(f"""
