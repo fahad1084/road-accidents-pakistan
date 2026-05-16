@@ -5,138 +5,144 @@
 
 🔗 **Live Dashboard:** https://road-accidents-pakistan-mzv8xqsctzm4f9tpa9ntq4.streamlit.app
 
+![Version](https://img.shields.io/badge/version-v2.0-blue)
+![Python](https://img.shields.io/badge/python-3.10+-green)
+![Streamlit](https://img.shields.io/badge/streamlit-1.28+-red)
+
 ---
 
 ## Overview
 
-RoadGuard Pakistan is an interactive web dashboard built with Streamlit that analyses road traffic accident data across Pakistan. It provides geospatial hotspot maps, exploratory data analysis, machine learning predictions for accident severity and fatality risk, and data-backed policy recommendations.
-
-Pakistan records 30,000+ road fatalities annually yet no centralised, publicly accessible analytical platform existed. RoadGuard Pakistan addresses this gap.
+Pakistan records over **30,000 road fatalities annually** — one of the highest rates in Asia — yet no centralised, publicly accessible analytical platform existed. **RoadGuard Pakistan** addresses this gap by transforming raw accident data into actionable insights through an interactive web dashboard, machine learning models, and data-backed policy recommendations.
 
 ---
 
-## Features
+## 🗂️ Dashboard Pages
 
 | Page | Description |
 |------|-------------|
-| 📊 Overview | KPI summary cards — total accidents, fatalities, injuries, worst province |
-| 🗺️ Accident Map | Interactive Folium heatmap + province & Punjab division choropleth maps |
-| 📈 EDA & Trends | 15 exploratory charts — trends, causes, severity, province comparisons |
-| 🏙️ Province Comparison | Side-by-side stats, radar chart, severity trends per province |
-| 🤖 ML Predictions | Severity classifier form + fatality risk regressor with gauge chart |
-| 📋 Policy Insights | 7 data-backed policy recommendations with supporting charts |
-| 👤 About | Project background, data sources, tech stack, author info |
+| 📊 Overview | KPI summary cards — total accidents, fatalities, injuries |
+| 🗺️ Accident Map | Interactive Folium heatmap + province & Punjab choropleth maps |
+| 📈 EDA & Trends | 15+ charts with year range filter and CSV download |
+| 🏙️ Province Comparison | Side-by-side stats, radar chart, severity trends |
+| 🤖 ML Predictions | Severity classifier + fatality risk regressor |
+| 📋 Policy Insights | 7 data-backed policy recommendations |
+| 🌍 International Benchmark | Pakistan vs India, Bangladesh, UK, global averages |
+| 🧮 Risk Calculator | Personal road accident risk score estimator |
+| 📋 Province Scorecard | Safety grade and detailed scorecard per province |
+| ⚠️ Dangerous Roads | Top 10 most dangerous highways with interactive map |
+| 👤 About | Project background, data sources, tech stack |
 
 ---
 
-## ML Model Performance
+## 🤖 ML Model Performance
 
 | Model | Algorithm | Target | Score | Target Met |
 |-------|-----------|--------|-------|------------|
 | Severity Classifier | Random Forest | Low / Medium / High | 100% Accuracy | ✅ (>80%) |
 | Fatality Regressor | Gradient Boosting | Killed count | R² = 0.9958 | ✅ (>0.70) |
+| Baseline Classifier | Logistic Regression | Low / Medium / High | 92.31% Accuracy | ✅ |
+| Baseline Regressor | Linear Regression | Killed count | R² = 0.9984 | ✅ |
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
 | Language | Python 3.10+ |
 | Dashboard | Streamlit 1.28+ |
-| Data | Pandas, NumPy |
+| Data | Pandas, NumPy, OpenPyXL |
 | Visualisation | Plotly, Seaborn, Matplotlib |
 | Mapping | Folium, GeoPandas, streamlit-folium |
 | ML | scikit-learn, XGBoost, joblib |
+| Deployment | Streamlit Community Cloud |
 
 ---
 
-## Data Sources
+## 📦 Data Sources
 
 | Source | Description |
 |--------|-------------|
-| [NTRC / PBS via Kaggle](https://www.kaggle.com/datasets/ahsanneural/pakistan-traffic-accidents-ntrc-and-pbs) | Province-level accident data 2006–2023 |
-| [Road Accident in Pakistan 2012–2021](https://www.kaggle.com/datasets/mohsinali123/road-accident-in-pakistan-2012-2021) | Monthly national accident records |
-| [Rescue 1122 Punjab](https://www.kaggle.com) | District-level emergency call data for 37 Punjab districts |
-| [GADM Shapefiles](https://gadm.org) | Pakistan province & district boundary shapefiles |
-| [Open-Meteo API](https://open-meteo.com) | Weather data for major Pakistani cities |
+| NTRC & PBS via Kaggle | Province-level accident data 2006–2023 |
+| Road Accident in Pakistan 2012–2021 | Monthly national accident records |
+| Rescue 1122 Punjab | District-level emergency data — 37 Punjab districts |
+| GADM Shapefiles | Pakistan province & district boundary shapefiles |
+| Open-Meteo API | Weather data for major Pakistani cities |
+| WHO Global Road Safety Report 2023 | International benchmarking data |
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 roadguard_pakistan/
-├── app.py                        # Streamlit entry point
+├── app.py
 ├── pages/
-│   ├── 01_overview.py            # KPI dashboard
-│   ├── 02_map.py                 # Interactive maps
-│   ├── 03_eda.py                 # 15 EDA charts
-│   ├── 04_provinces.py           # Province comparison
-│   ├── 05_predict.py             # ML predictions
-│   ├── 06_policy.py              # Policy recommendations
-│   └── 07_about.py               # About page
+│   ├── 01_Overview.py
+│   ├── 02_Map.py
+│   ├── 03_Eda.py
+│   ├── 04_Provinces.py
+│   ├── 05_Predict.py
+│   ├── 06_Policy.py
+│   ├── 07_About.py
+│   ├── 08_benchmarking.py
+│   ├── 09_calculator.py
+│   ├── 10_scorecard.py
+│   └── 11_dangerous_roads.py
 ├── data/
-│   ├── raw/                      # Original source files (gitignored)
-│   ├── cleaned/                  # Processed CSVs + maps + dictionary
-│   └── shapefiles/               # GADM Pakistan shapefiles (gitignored)
-├── models/                       # Trained .joblib model files
+│   ├── raw/
+│   ├── cleaned/
+│   └── shapefiles/
+├── models/
 ├── notebooks/
-│   ├── 01_data_cleaning.ipynb
-│   ├── 02_eda_part1.ipynb
-│   ├── 03_eda_part2_geo.ipynb
-│   ├── 04_ml_training.ipynb
-│   └── 05_geospatial.ipynb
 ├── utils/
-│   ├── styles.py                 # Shared sidebar & CSS
-│   ├── preprocessing.py
-│   ├── model_utils.py
-│   └── map_utils.py
-├── assets/                       # Logo, images
-├── .streamlit/config.toml        # Theme configuration
+│   └── styles.py
+├── .streamlit/config.toml
 └── requirements.txt
 ```
 
 ---
 
-## Setup & Installation
+## 🚀 Setup & Installation
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/YOUR_USERNAME/road-accidents-pakistan.git
 cd road-accidents-pakistan
-
-# 2. Create virtual environment
 python -m venv venv
-venv\Scripts\activate        # Windows
-source venv/bin/activate     # macOS/Linux
-
-# 3. Install dependencies
+venv\Scripts\activate
 pip install -r requirements.txt
-
-# 4. Run the dashboard
 streamlit run app.py
 ```
 
 ---
 
-## Limitations
+## 📌 Version History
 
-- District-level data is only available for Punjab (Rescue 1122). Other provinces have province-year level data only.
-- Dataset is based on reported accidents — actual figures may be higher due to underreporting.
-- ML models trained on aggregate data; individual accident-level prediction requires more granular data.
+| Version | Release | Features |
+|---------|---------|----------|
+| v1.0 | May 2026 | Core dashboard — 15 charts, 3 maps, 2 ML models, 7 policy recs |
+| v2.0 | May 2026 | + Benchmarking, Risk calculator, Scorecard, Dangerous roads, CSV download |
 
 ---
 
-## Future Improvements
+## ⚠️ Limitations
 
-- Real-time accident data integration via API
-- District-level data for Sindh, KPK, and Balochistan
-- Year range filter across all dashboard pages
-- Dark mode support
-- Downloadable filtered data as CSV
+- District-level data only available for Punjab
+- Dataset based on reported accidents
+- ML models trained on aggregate data
+- International benchmarking uses WHO 2023 estimates
+
+---
+
+## 🔮 Future Work (V3.0)
+
+- Real-time accident data integration
+- District-level data for all provinces
+- Weather correlation analysis
 - Mobile-optimised layout
+- Hospital & insurance system integration
 
 ---
 
-*BS Data Science Project · May 2026 · Pakistan*
+*RoadGuard Pakistan · BS Data Science Project · 2026 · 🇵🇰*

@@ -119,6 +119,47 @@ with col_trend:
 
 st.divider()
 
+# ── vs National Average ──
+st.subheader("📊 Province vs National Average")
+df_national = df_main[df_main['Province'] == 'Pakistan (National)'].copy()
+
+nat_avg_accidents = df_national['Total_Accidents'].mean()
+nat_avg_killed = df_national['Killed'].mean()
+nat_avg_severity = df_national['Severity_Index'].mean()
+
+col_n1, col_n2, col_n3 = st.columns(3)
+
+with col_n1:
+    diff_acc = ((df_prov['Total_Accidents'].mean() - nat_avg_accidents) 
+                / nat_avg_accidents * 100)
+    st.metric(
+        "Avg Annual Accidents vs National",
+        f"{int(df_prov['Total_Accidents'].mean()):,}",
+        delta=f"{diff_acc:+.1f}% vs national avg",
+        delta_color="inverse"
+    )
+
+with col_n2:
+    diff_killed = ((df_prov['Killed'].mean() - nat_avg_killed) 
+                   / nat_avg_killed * 100)
+    st.metric(
+        "Avg Annual Killed vs National",
+        f"{int(df_prov['Killed'].mean()):,}",
+        delta=f"{diff_killed:+.1f}% vs national avg",
+        delta_color="inverse"
+    )
+
+with col_n3:
+    diff_sev = ((df_prov['Severity_Index'].mean() - nat_avg_severity) 
+                / nat_avg_severity * 100)
+    st.metric(
+        "Avg Severity vs National",
+        f"{df_prov['Severity_Index'].mean():.2f}",
+        delta=f"{diff_sev:+.1f}% vs national avg",
+        delta_color="inverse"
+    )
+
+st.divider()
 # ── Row 2 ──
 col_l, col_r = st.columns(2)
 
